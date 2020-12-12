@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.475,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.997,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.112,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.159,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\67\Desktop\baza\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.150,=C:\Users\67\Desktop\baza\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\67\Desktop\baza\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.168,C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\67\Desktop\baza\skladi.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.492,=C:\Users\67\Desktop\baza\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.144,C:\Users\67\Desktop\baza\Project1PCH1.h=C:\Users\67\Desktop\baza\skladiPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\67\Desktop\baza\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.173,C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\67\Desktop\baza\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.888,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.449,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>

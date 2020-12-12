@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.369,C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\TL6729\Desktop\Ежедневка\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.115,=C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.369,C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\TL6729\Desktop\Ежедневка\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.801,C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\TL6729\Desktop\Ежедневка\semya.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.369,C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\TL6729\Desktop\Ежедневка\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.195,=C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.837,C:\Users\TL6729\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\TL6729\Desktop\Ежедневка\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.771,C:\Users\TL6729\Desktop\Ежедневка\Project1PCH1.h=C:\Users\TL6729\Desktop\Ежедневка\semyaPCH1.h</Transaction>
+    <Transaction>2018.05.09 18:12:39.147,=C:\Users\TL6729\Desktop\Ежедневка\Unit2.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

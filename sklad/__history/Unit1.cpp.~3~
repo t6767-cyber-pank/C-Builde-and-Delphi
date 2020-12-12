@@ -1,0 +1,111 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include      <ComObj.hpp>
+#include      <utilcls.h>
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+
+// Отчистка массивов от лишних значений
+void TForm1::clearmas()
+{
+for (int i = 0; i < 19; i++) {
+a[i]="0";
+b[i]="0";
+c[i]=60;
+}
+}
+
+// Основные запросы и действия над таблицами БД
+void TForm1::zap(int x, int y)
+{
+ADOConnection1->Connected=false;
+ADOQuery1->Active=false;
+TStringList * list;
+list=new TStringList();
+list->Clear();
+list->LoadFromFile("connect.txt");
+String s=
+ADOConnection1->ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source="++"C:\Users\67\Desktop\baza\baza.mdb;Persist Security Info=False";
+ADOConnection1->Connected=true;
+// название таблицы облегчение копипастинга
+String table="";
+// массив колонок таблицы  облегчение копипастинга
+String data[20];
+// 1 выбока
+// 2 добавление записи
+// 3 изменение записи
+// 4 удаление записи
+// последующие дополнительные операции
+switch (x)
+ {
+ case 1: table="otdel";
+		 data[1]="nomer_otdela";
+		 data[2]="naimenovanie";
+		 data[3]="reghim_raboti";
+		 data[0]="id_otdel";
+		 switch(y)
+		 {
+		   case 1:
+				   clearmas();
+				   vision(1);
+				   ADOQuery1->SQL->Text="select * from "+table+" order by "+data[1]+" asc";
+				   ADOQuery1->Active=true;
+				   a[1]="Номер п/п";
+				   a[2]="Номер отдела";
+				   a[3]="Наименование";
+				   a[4]="Режим работы";
+				   b[1]=data[1];
+				   b[2]=data[2];
+				   b[3]=data[3];
+				   b[4]=data[0];
+				   c[1]=60;
+				   c[2]=100;
+				   c[3]=400;
+				   c[4]=200;
+				   adtotab(4, StringGrid1);
+				   break;
+		   case 2:
+					ADOQuery1->SQL->Text="insert into "+table+"("+data[1]+", "+data[2]+", "+data[3]+") values(:d1, :d2, :d3)";
+					ADOQuery1->Parameters->ParamByName("d1")->Value=Form2->Edit1->Text;
+					ADOQuery1->Parameters->ParamByName("d2")->Value=Form2->Edit2->Text;
+					ADOQuery1->Parameters->ParamByName("d3")->Value=Form2->MaskEdit1->Text;
+					ADOQuery1->ExecSQL();
+					zap(1,1);
+					break;
+		   case 3:
+					ADOQuery1->SQL->Text="update "+table+" set "+data[1]+"=:d1, "+data[2]+"=:d2, "+data[3]+"=:d3 where "+data[0]+"=:d0";
+					ADOQuery1->Parameters->ParamByName("d1")->Value=Form2->Edit1->Text;
+					ADOQuery1->Parameters->ParamByName("d2")->Value=Form2->Edit2->Text;
+					ADOQuery1->Parameters->ParamByName("d3")->Value=Form2->MaskEdit1->Text;
+					ADOQuery1->Parameters->ParamByName("d0")->Value=StringGrid1->Cells[4][StringGrid1->Row];
+					ADOQuery1->ExecSQL();
+					zap(1,1);
+					break;
+		   case 4:
+					ADOQuery1->SQL->Text="delete from "+table+" where "+data[0]+"=:d0";
+					ADOQuery1->Parameters->ParamByName("d0")->Value=StringGrid1->Cells[4][StringGrid1->Row];
+					ADOQuery1->ExecSQL();
+					zap(1,1);
+					break;
+		 }
+		 break;
+ }
+ADOConnection1->Connected=false;
+ADOQuery1->Active=false;
+list->Free();
+}
+
+
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------

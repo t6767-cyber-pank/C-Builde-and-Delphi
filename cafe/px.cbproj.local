@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.888,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.997,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2016.05.10 21:46:01.990,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2016.05.10 21:46:02.039,=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2016.05.10 21:46:38.943,C:\Users\67\Desktop\Пустой\Unit1.dfm=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016.05.10 21:46:38.943,C:\Users\67\Desktop\Пустой\Unit1.h=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2016.05.10 21:46:38.943,C:\Users\67\Desktop\Пустой\Unit1.cpp=C:\Users\67\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2016.05.10 21:46:40.614,C:\Users\67\Desktop\Пустой\Project1PCH1.h=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2016.05.10 21:46:47.616,C:\Users\67\Desktop\Пустой\pxPCH1.h=C:\Users\67\Desktop\Пустой\Project1PCH1.h</Transaction>
+    <Transaction>2016.05.10 21:46:47.638,C:\Users\67\Desktop\Пустой\px.cbproj=C:\Users\67\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
